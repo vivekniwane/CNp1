@@ -1,0 +1,328 @@
+Microsoft Windows [Version 10.0.17134.885]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Vivek Nikam>f:
+
+F:\>dir
+ Volume in drive F is New Volume
+ Volume Serial Number is 7428-873C
+
+ Directory of F:\
+
+01/05/2018  09:19 PM            20,544 098b6c5.jpg
+11/15/2019  04:41 PM            92,690 30706957_1659880444089605_7038009457363648512_o.jpg
+12/01/2017  12:16 AM    <DIR>          Arduino
+08/30/2018  10:55 AM    <DIR>          Certifications
+11/12/2019  02:01 PM    <DIR>          CodeNautics
+07/05/2019  01:28 PM    <DIR>          Data Science GCEK
+09/04/2019  01:50 PM    <DIR>          Data Science Material
+09/01/2019  12:09 AM    <DIR>          DSML Solutions
+03/27/2019  02:28 PM    <DIR>          FDP Data Science VIT
+12/29/2017  09:05 PM        34,407,860 FDP IOT Lab.zip
+11/16/2019  10:11 AM    <DIR>          Git Projects
+08/17/2019  04:47 PM    <DIR>          Inteliment
+06/20/2018  02:48 PM    <DIR>          N Infinity
+02/14/2019  09:30 AM    <DIR>          PHD VIT
+08/13/2018  08:21 PM    <DIR>          Python
+09/09/2018  08:48 AM    <DIR>          SCO
+01/02/2018  10:58 PM    <DIR>          SE Comp
+07/10/2019  04:32 PM    <DIR>          Subodh Sir Project
+08/24/2019  04:26 PM    <DIR>          VIT Pune
+               3 File(s)     34,521,094 bytes
+              16 Dir(s)  157,758,582,784 bytes free
+
+F:\>cd "Git Projects"
+
+F:\Git Projects>git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+F:\Git Projects>git commit --help
+
+F:\Git Projects>mkdir aa
+
+F:\Git Projects>cd aa
+
+F:\Git Projects\aa>git clone --help
+
+F:\Git Projects\aa>dir
+ Volume in drive F is New Volume
+ Volume Serial Number is 7428-873C
+
+ Directory of F:\Git Projects\aa
+
+11/17/2019  11:15 AM    <DIR>          .
+11/17/2019  11:15 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  157,758,582,784 bytes free
+
+F:\Git Projects\aa>git clone https://github.com/viveknikam1/CNp1.git
+Cloning into 'CNp1'...
+remote: Enumerating objects: 31, done.
+remote: Counting objects: 100% (31/31), done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 31 (delta 10), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (31/31), done.
+
+F:\Git Projects\aa>dir
+ Volume in drive F is New Volume
+ Volume Serial Number is 7428-873C
+
+ Directory of F:\Git Projects\aa
+
+11/17/2019  11:16 AM    <DIR>          .
+11/17/2019  11:16 AM    <DIR>          ..
+11/17/2019  11:16 AM    <DIR>          CNp1
+               0 File(s)              0 bytes
+               3 Dir(s)  157,758,496,768 bytes free
+
+F:\Git Projects\aa>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+F:\Git Projects\aa>dir
+ Volume in drive F is New Volume
+ Volume Serial Number is 7428-873C
+
+ Directory of F:\Git Projects\aa
+
+11/17/2019  11:16 AM    <DIR>          .
+11/17/2019  11:16 AM    <DIR>          ..
+11/17/2019  11:19 AM    <DIR>          CNp1
+               0 File(s)              0 bytes
+               3 Dir(s)  157,758,496,768 bytes free
+
+F:\Git Projects\aa>cd CNp1
+
+F:\Git Projects\aa\CNp1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my_app.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+F:\Git Projects\aa\CNp1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   model.py
+        modified:   my_app.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+F:\Git Projects\aa\CNp1>git add my_app.py
+
+F:\Git Projects\aa\CNp1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   my_app.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   model.py
+
+
+F:\Git Projects\aa\CNp1>git commit --help
+
+F:\Git Projects\aa\CNp1>git commit -m "This is commit on 17/11 11:27PM"
+[master d03bbf4] This is commit on 17/11 11:27PM
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+F:\Git Projects\aa\CNp1>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 56.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: GitHub found 2 vulnerabilities on viveknikam1/CNp1's default branch (1 high, 1 moderate). To find out more, visit:
+remote:      https://github.com/viveknikam1/CNp1/network/alerts
+remote:
+To https://github.com/viveknikam1/CNp1.git
+   953f225..d03bbf4  master -> master
+
+F:\Git Projects\aa\CNp1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   model.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+F:\Git Projects\aa\CNp1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   model.py
+        modified:   requirements.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+F:\Git Projects\aa\CNp1>git add -A
+
+F:\Git Projects\aa\CNp1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   model.py
+        modified:   requirements.txt
+
+
+F:\Git Projects\aa\CNp1>git commit -m "this is next msg on 17/11"
+[master 10a0977] this is next msg on 17/11
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+F:\Git Projects\aa\CNp1>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 375 bytes | 34.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: GitHub found 2 vulnerabilities on viveknikam1/CNp1's default branch (1 high, 1 moderate). To find out more, visit:
+remote:      https://github.com/viveknikam1/CNp1/network/alerts
+remote:
+To https://github.com/viveknikam1/CNp1.git
+   d03bbf4..10a0977  master -> master
+
+F:\Git Projects\aa\CNp1>git diff d03bbf449aecbaef837415ed9d5cc1ba28474988 10a097780d974a55d5a72a574233ddecea8e669f
+diff --git a/model.py b/model.py
+index 7092d32..f3bdffa 100644
+--- a/model.py
++++ b/model.py
+@@ -1,6 +1,6 @@
+ import pandas as pd
+ import numpy as np
+-import matplotlib.pyplot as plt
++#import matplotlib.pyplot as plt^M
+ df = pd.read_excel('sal_exp.xlsx',sheet_name = 'Sheet1')
+ X = df[['Experience']]
+ #X = df['Experience'].values.reshape(-1,1)
+diff --git a/requirements.txt b/requirements.txt
+index 73969fa..ffb11f2 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -9,4 +9,4 @@ pickleshare==0.7.4
+ requests==2.19.1
+ scikit-image==0.14.0
+ scikit-learn==0.19.2
+-gunicorn==19.9.0
++gunicorn==19.9.0
+\ No newline at end of file
+
+F:\Git Projects\aa\CNp1>git diff
+
+F:\Git Projects\aa\CNp1>git diff 10a097780d974a55d5a72a574233ddecea8e669f 953f22534b3e1843248fe2663ca873da2b81d3ac
+diff --git a/model.py b/model.py
+index f3bdffa..7092d32 100644
+--- a/model.py
++++ b/model.py
+@@ -1,6 +1,6 @@
+ import pandas as pd
+ import numpy as np
+-#import matplotlib.pyplot as plt
++import matplotlib.pyplot as plt^M
+ df = pd.read_excel('sal_exp.xlsx',sheet_name = 'Sheet1')
+ X = df[['Experience']]
+ #X = df['Experience'].values.reshape(-1,1)
+diff --git a/my_app.py b/my_app.py
+index 65f9d81..aa08937 100644
+--- a/my_app.py
++++ b/my_app.py
+@@ -17,7 +17,7 @@ def prediction():
+     X = P.fit_transform(val.reshape(-1,1))
+     output = model.predict(X)
+     output = round(float(output),2)
+-    return 'Your salary prediction by CodeNautics is '+ str(output) + 'LPA. Thanks'
++    return 'Your salary prediction is '+ str(output) + 'LPA. Thanks'^M
+
+ if __name__=='__main__':
+     app.run(debug = True, port='5001')
+diff --git a/requirements.txt b/requirements.txt
+index ffb11f2..73969fa 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -9,4 +9,4 @@ pickleshare==0.7.4
+ requests==2.19.1
+ scikit-image==0.14.0
+ scikit-learn==0.19.2
+-gunicorn==19.9.0
+\ No newline at end of file
++gunicorn==19.9.0
+
+F:\Git Projects\aa\CNp1>
+F:\Git Projects\aa\CNp1>git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/viveknikam1/CNp1
+ + cb1c738...5ef092a dependabot/pip/requests-2.20.0 -> origin/dependabot/pip/requests-2.20.0  (forced update)
+Already up to date.
+
+F:\Git Projects\aa\CNp1>
