@@ -17,7 +17,7 @@ def prediction():
     X = P.fit_transform(val.reshape(-1,1))
     output = model.predict(X)
     output = round(float(output),2)
-    return 'Your salary prediction is '+ str(output) + 'LPA. Thanks'
+    return 'Your salary prediction by CodeNautics is '+ str(output) + 'LPA. Thanks'
 
 if __name__=='__main__':
     app.run(debug = True, port='5001')
